@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btn : Button
     private lateinit var result : TextView
 
+    companion object {
+        private const val STATE_RESULT = "state_result"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
